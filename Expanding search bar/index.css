@@ -8,3 +8,23 @@ body {
   --search-border: #bbb;
   --search-focus-border: #3a71ca;
 }
+
+input {
+  width: 15%;
+  margin: 2rem 4rem;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  border: 2px solid var(--search-border);
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: 0.8s ease-in-out;
+}
+
+input:focus {
+  width: 80%;
+  border: 4px solid var(--search-focus-border);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
